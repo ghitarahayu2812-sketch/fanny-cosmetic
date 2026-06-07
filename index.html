@@ -1,99 +1,328 @@
-```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fanny Cosmetic & Fanny Kos Guesthouse</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:#fff;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(135deg,#fff8f9,#fdecef);
+padding:100px 20px;
+text-align:center;
+}
+
+.brand{
+font-size:64px;
+font-weight:700;
+letter-spacing:6px;
+color:#2f2f2f;
+}
+
+.brand-sub{
+font-size:22px;
+letter-spacing:8px;
+color:#d48a9b;
+margin-bottom:25px;
+}
+
+.tagline{
+max-width:700px;
+margin:auto;
+font-size:18px;
+color:#666;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#d48a9b;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+opacity:.9;
+}
+
+section{
+padding:70px 8%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#d48a9b;
+}
+
+.about,
+.contact{
+max-width:900px;
+margin:auto;
+text-align:center;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:16px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:260px;
+object-fit:cover;
+}
+
+.card-content{
+padding:20px;
+text-align:center;
+}
+
+.card h3{
+margin-bottom:10px;
+}
+
+footer{
+background:#d48a9b;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="brand">FANNY</div>
+<div class="brand-sub">COSMETIC</div>
+
+<p class="tagline">
+✨ Menjual berbagai merek kosmetik & skincare terpercaya.<br>
+💖 Produk Original • Harga Bersahabat • Pelayanan Ramah
+</p>
+
+<a class="btn"
+href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk.">
+Hubungi Kami
+</a>
+
+</header>
+
 <section>
-<h2>Produk Kami</h2>
 
-<div class="services">
+<h2>Tentang Kami</h2>
 
-<div class="card">
-<img src="serum.jpg" style="width:100%;border-radius:10px;">
-<h3>Serum</h3>
-<p>Berbagai pilihan serum skincare berkualitas.</p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Serum.">Tanya Produk</a>
+<div class="about">
+<p>
+Fanny Cosmetic menyediakan berbagai produk kosmetik dan skincare terpercaya dengan pelayanan ramah, produk berkualitas, dan harga yang bersahabat.
+</p>
 </div>
 
-<div class="card">
-<img src="sunscreen.jpg" style="width:100%;border-radius:10px;">
-<h3>Sunscreen</h3>
-<p>Perlindungan kulit dari sinar UV setiap hari.</p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Sunscreen.">Tanya Produk</a>
-</div>
-
-<div class="card">
-<img src="lipcream.jpg" style="width:100%;border-radius:10px;">
-<h3>Lip Cream</h3>
-<p>Pilihan warna menarik untuk penampilan Anda.</p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20Lip%20Cream.">Tanya Produk</a>
-</div>
-
-<div class="card">
-<img src="facialwash.jpg" style="width:100%;border-radius:10px;">
-<h3>Facial Wash</h3>
-<p>Pembersih wajah untuk perawatan harian.</p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20Facial%20Wash.">Tanya Produk</a>
-</div>
-
-<div class="card">
-<img src="mosturizer.jpg" style="width:100%;border-radius:10px;">
-<h3>Moisturizer</h3>
-<p>Membantu menjaga kelembapan kulit.</p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20Moisturizer.">Tanya Produk</a>
-</div>
-
-<div class="card">
-<img src="bodylotion.jpg" style="width:100%;border-radius:10px;">
-<h3>Body Lotion</h3>
-<p>Perawatan tubuh agar kulit tetap sehat.</p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20Body%20Lotion.">Tanya Produk</a>
-</div>
-
-</div>
 </section>
 
 <section>
+
+<h2>Produk Kami</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="serum.jpg" alt="Serum">
+<div class="card-content">
+<h3>Serum</h3>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Serum.">Tanya Produk</a>
+</div>
+</div>
+
+<div class="card">
+<img src="sunscreen.jpg" alt="Sunscreen">
+<div class="card-content">
+<h3>Sunscreen</h3>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Sunscreen.">Tanya Produk</a>
+</div>
+</div>
+
+<div class="card">
+<img src="lipcream.jpg" alt="Lip Cream">
+<div class="card-content">
+<h3>Lip Cream</h3>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Lip%20Cream.">Tanya Produk</a>
+</div>
+</div>
+
+<div class="card">
+<img src="facialwash.jpg" alt="Facial Wash">
+<div class="card-content">
+<h3>Facial Wash</h3>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Facial%20Wash.">Tanya Produk</a>
+</div>
+</div>
+
+<div class="card">
+<img src="mosturizer.jpg" alt="Moisturizer">
+<div class="card-content">
+<h3>Moisturizer</h3>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Moisturizer.">Tanya Produk</a>
+</div>
+</div>
+
+<div class="card">
+<img src="bodylotion.jpg" alt="Body Lotion">
+<div class="card-content">
+<h3>Body Lotion</h3>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Cosmetic,%20saya%20ingin%20bertanya%20tentang%20produk%20Body%20Lotion.">Tanya Produk</a>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
 <h2>🏠 Fanny Kos & Guesthouse</h2>
 
 <div class="about">
 <p>
-Kost bulanan dan penginapan harian yang nyaman di Pasir Putih, Maluk, Kabupaten Sumbawa Barat.
+Kost bulanan dan penginapan harian yang nyaman di Pasir Putih, Maluk, Kabupaten Sumbawa Barat. Cocok untuk pekerja, wisatawan, maupun keluarga.
 </p>
 </div>
 
-<div class="services">
+<br><br>
+
+<div class="products">
 
 <div class="card">
+<div class="card-content">
 <h3>🏠 Kamar Non AC</h3>
-<p><strong>Rp1.000.000 / bulan</strong></p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Kos,%20saya%20ingin%20bertanya%20tentang%20Kamar%20Non%20AC.">Tanya Kamar</a>
+<p>Rp1.000.000 / bulan</p>
+<br>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Kamar%20Non%20AC.">
+Tanya Kamar
+</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-content">
 <h3>❄️ Kamar AC</h3>
-<p><strong>Rp1.500.000 - Rp1.700.000 / bulan</strong></p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Kos,%20saya%20ingin%20bertanya%20tentang%20Kamar%20AC.">Tanya Kamar</a>
+<p>Rp1.500.000 - Rp1.700.000 / bulan</p>
+<br>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Kamar%20AC.">
+Tanya Kamar
+</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-content">
 <h3>🛏️ Penginapan Harian</h3>
-<p><strong>Rp150.000 / hari</strong></p>
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Kos,%20saya%20ingin%20bertanya%20tentang%20Penginapan%20Harian.">Pesan Kamar</a>
+<p>Rp150.000 / hari</p>
+<br>
+<a class="btn" href="https://wa.me/6285339247299?text=Halo,%20saya%20ingin%20memesan%20penginapan%20harian.">
+Pesan Kamar
+</a>
+</div>
 </div>
 
 <div class="card">
+<div class="card-content">
 <h3>📍 Lokasi</h3>
 <p>Pasir Putih, Maluk, Sumbawa Barat</p>
-<a class="btn" href="https://maps.google.com/?q=3PMX+8PX+Pasir+Putih+Maluk+Sumbawa+Barat" target="_blank">Buka Google Maps</a>
-</div>
-
-</div>
-
-<div class="contact">
-<p><strong>📞 Reservasi</strong></p>
-<p>0853-3924-7299</p>
-
-<a class="btn" href="https://wa.me/6285339247299?text=Halo%20Fanny%20Kos,%20saya%20ingin%20menanyakan%20ketersediaan%20kamar.">
-Booking Sekarang
+<br>
+<a class="btn"
+href="https://maps.google.com/?q=3PMX+8PX+Pasir+Putih+Maluk+Sumbawa+Barat"
+target="_blank">
+Google Maps
 </a>
+</div>
+</div>
+
 </div>
 
 </section>
-```
+
+<section>
+
+<h2>Kontak</h2>
+
+<div class="contact">
+
+<p>
+<strong>WhatsApp</strong><br>
+<a href="https://wa.me/6285339247299">
+0853-3924-7299
+</a>
+</p>
+
+<br>
+
+<p>
+<strong>Alamat</strong><br>
+<a href="https://maps.google.com/?q=3PMX+8PX+Pasir+Putih+Maluk+Sumbawa+Barat" target="_blank">
+📍 Buka Lokasi di Google Maps
+</a>
+</p>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Fanny Cosmetic & Fanny Kos Guesthouse
+</footer>
+
+<a class="whatsapp"
+href="https://wa.me/6285339247299?text=Halo,%20saya%20ingin%20bertanya.">
+Chat WhatsApp
+</a>
+
+</body>
+</html>
